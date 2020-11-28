@@ -1,0 +1,104 @@
+= POCO Framework showcase
+
+This project aims to show how https://pocoproject.org[POCO] {cpp} framework can speed up network centric {cpp}
+applications.
+
+The project also contains a presentation written in AsciiDoc markup format as well as the
+source code for accompanying examples.
+
+The presentation source files can be found in `presentation` folder.
+
+{cpp} accompanying examples source code can be found in `include` folder (header files) and
+`src` folder (implementation files).
+
+Both {cpp} examples and AsciiDoc presentation are built using CMake.
+
+== Project organization
+
+C++ source code is organized following the pattern:
+
+----
+├── include
+│   └── namespace
+│        └── class.h
+└── src
+    └── namespace
+        └── class.cpp
+----
+
+Project is organized as follows:
+
+----
+.
+├── presentation                  AsciiDoc presentation
+│   └── images
+├── config                        Examples configuration files
+├── include
+│   ├── logging
+│   └── util
+│       ├── application
+│       └── application_helpers
+└── src
+    ├── logging                   Poco Logging framework examples
+    └── util                      Poco::Util library examples
+        ├── application           Poco::Util::Application examples
+        └── application_helpers
+----
+
+== Configuration stage
+
+Use your IDE or proceed to run CMake from command line.
+
+The simplest way to configure from command line is to create a build subdirectory under the project source coce
+directory and run CMake as shown below:
+
+----
+mkdir cmake-build
+cd cmake-build
+cmake ..
+----
+
+== Build stage
+
+=== Building presentation
+
+==== Requirements
+
+`asciidocor-revealjs` program is required to convert AsciiDoc source files into an HTML document.
+
+If the program cannot be found the `presentation` target will not be defined (see below).
+
+==== How to build
+
+The presentation is built leveraging CMake custom target and custom command facilities.
+Choose the `presentation` target in your IDE or run:
+
+----
+cmake --build . --target presentation
+----
+
+from the build directory.
+
+--
+NOTE: The `presentation` target is included in `all`. See below.
+--
+
+=== Building accompanying examples
+
+Examples can be built from the IDE or by running CMake from command line:
+
+----
+cmake --build .
+----
+
+to build all target, or by running:
+
+----
+cmake --build . --target <target name>
+----
+
+to build a single target. To show all targets run:
+
+----
+cmake --build . --target help
+----

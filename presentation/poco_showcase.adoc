@@ -1,0 +1,29 @@
+= POCO {cpp} framework showcase : How to improve coding quality and speed
+:author: Gennaro Bellizio <gennaro.bellizio@eurobet.it>
+:date: 2020-11-27
+:icons: font
+:revealjs_theme: beige
+:revealjs_history: true
+:revealjs_fragmentInURL: true
+:revealjs_viewDistance: 5
+:revealjs_width: 1920
+:revealjs_height: 1080
+:revealjs_controls: true
+:revealjs_controlsLayout: edges
+:revealjs_controlsTutorial: true
+:revealjs_slideNumber: c/t
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_defaultTiming: 42
+:imagesdir: images
+:source-highlighter: highlightjs
+
+include::intro.adoc[]
+
+include::uses.adoc[]
+
+include::features.adoc[]
+
+include::api.adoc[]
+
+include::logging.adoc[]

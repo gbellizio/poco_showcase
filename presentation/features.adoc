@@ -1,0 +1,39 @@
+[.columns]
+== Main Features (see https://pocoproject.org/about.html#features[complete list])
+
+[.column]
+* *Cross-Platform* +
+Platform abstractions to build cross platform code (write once, compile wherever)
+
+* *Performance* +
+Written in efficient modern C++.
+
+* *Easy to Use* +
+Comprehensive and consistent APIs combined with an easily accessible code base.
+
+* *Modular & Scalable* +
+Don't pay for what you don't use.
+
+* *Multithreading* +
+Advanced multithreading abstractions simplify the development of multithreaded programs.
+
+* *Logging* +
+Versatile, low overhead and extensible logging framework.
+
+[.column]
+
+* *Compression* +
+Stream classes for zlib-based compression/decompression.
+ZIP file creation and extraction.
+
+* *JSON & XML* +
+Multiple APIs (streaming and document-oriented) for parsing and creating JSON and XML.
+
+* *Database Access* +
+Access SQL (SQLite, MySQL, PostgreSQL and others via ODBC) and NoSQL databases (MongoDB and Redis).
+
+* *Network & Internet* +
+From basic sockets to HTTP/HTTPS client and server.
+
+* *Encryption & Security* +
+Easy-to-use wrappers for OpenSSL make it easy to use encryption and SSL/TLS.

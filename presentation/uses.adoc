@@ -1,0 +1,25 @@
+[.columns]
+== POCO is used for
+
+[.column]
+--
+[none]
+icon:microchip[Embedded] *Embedded Devices*::
+Create software for connected embedded devices running Linux, Windows Embedded or QNX.
+
+icon:mobile-alt[Mobile] *Mobile Apps*::
+Create cross-platform backends in C++ for iOS and Android applications and combine it with a native or HTML5-based user interface.
+
+icon:thermometer-half[IoT] *Internet of Things*::
+Create software for IoT devices that talk to cloud backends over HTTP REST APIs.
+--
+
+[.column]
+icon:server[Server] *Server Applications*::
+Build application servers in C++ that talk to SQL databases, MongoDB or Redis.
+
+icon:cloud[Cloud] *Cloud & Microservices*::
+Build high-performance microservices with REST APIs for data analytics or machine learning in C++.
+
+icon:desktop[Desktop] *Desktop Apps*::
+Build desktop applications that talk to REST APIs or SQL databases.
