@@ -1,5 +1,6 @@
 #[[
 Converts a string from PascalCase to snake_case
+credit: https://github.com/ros2/rosidl/blob/master/rosidl_cmake/cmake/string_camel_case_to_lower_case_underscore.cmake
 ]]#
 function(pascal_to_snake_case str var)
     # insert an underscore before any upper case letter
