@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include <Poco/AutoPtr.h>
 #include <Poco/Channel.h>
 #include <Poco/Message.h>
 
