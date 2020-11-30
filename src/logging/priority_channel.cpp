@@ -36,7 +36,7 @@ void PriorityChannel::setProperty(const std::string &name, const std::string &va
     }
 }
 
-void PriorityChannel::set_channel(Poco::Channel::Ptr channel) { m_destination_channel = channel; }
+void PriorityChannel::set_channel(Poco::AutoPtr<Channel> channel) { m_destination_channel = channel; }
 
 void PriorityChannel::set_level(Poco::Message::Priority priority) { m_priority = priority; }
 
