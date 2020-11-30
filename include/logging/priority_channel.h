@@ -34,7 +34,7 @@ public:
 
     /// @brief Sets the destination channel
     /// @param channel
-    void set_channel(Channel::Ptr channel);
+    void set_channel(Poco::AutoPtr<Channel> channel);
 
     /// @brief Sets the log level (or priority threshold)
     /// @param priority
