@@ -44,7 +44,7 @@ protected:
     ~PriorityChannel() override;
 
 private:
-    Channel::Ptr m_destination_channel;
+    Poco::AutoPtr<Channel> m_destination_channel;
     int m_priority = {Poco::Message::PRIO_INFORMATION};
 };
 
