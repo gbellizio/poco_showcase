@@ -11,4 +11,3 @@ target_link_libraries(simplest_application
 application_example(BasicApplication)
 application_example(DefaultConfiguredApplication)
 application_example(WithOptionsApplication)
-application_example(ModularApplication)
