@@ -15,7 +15,7 @@ public:
     PriorityChannel(); // needed by Poco::AbstractInstantiator
     explicit PriorityChannel(Poco::Message::Priority priority);
     explicit PriorityChannel(Poco::AutoPtr<Channel> channel);
-    PriorityChannel(Poco::Message::Priority priority, Channel::Ptr channel);
+    PriorityChannel(Poco::Message::Priority priority, Poco::AutoPtr<Channel> channel);
 
     /// @brief Logs a message
     /// This method is called by the framework when a message has to be logged.
