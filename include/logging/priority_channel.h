@@ -14,7 +14,7 @@ class PriorityChannel : public Poco::Channel {
 public:
     PriorityChannel(); // needed by Poco::AbstractInstantiator
     explicit PriorityChannel(Poco::Message::Priority priority);
-    explicit PriorityChannel(Channel::Ptr channel);
+    explicit PriorityChannel(Poco::AutoPtr<Channel> channel);
     PriorityChannel(Poco::Message::Priority priority, Channel::Ptr channel);
 
     /// @brief Logs a message

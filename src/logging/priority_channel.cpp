@@ -13,7 +13,7 @@ PriorityChannel::PriorityChannel() = default;
 PriorityChannel::PriorityChannel(Poco::Message::Priority priority)
     : m_priority{priority} {}
 
-PriorityChannel::PriorityChannel(Poco::Channel::Ptr channel)
+PriorityChannel::PriorityChannel(Poco::AutoPtr<Channel> channel)
     : m_destination_channel{channel} {}
 
 PriorityChannel::PriorityChannel(Poco::Message::Priority priority, Poco::Channel::Ptr channel)
